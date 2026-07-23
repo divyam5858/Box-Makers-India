@@ -1,0 +1,1345 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: white;
+  overflow-x: hidden;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+
+
+.catalog-title {
+  text-align: center;
+  padding: 90px 20px;
+}
+
+.small-title {
+  color: #7d7d7d;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.catalog-title h1 {
+  font-size: 55px;
+  font-weight: 800;
+  color: #111;
+  margin-bottom: 30px;
+}
+
+.description {
+  font-size: 25px;
+  color: #555;
+  line-height: 1.7;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.description b {
+  color: black;
+}
+
+
+
+.catalog-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: #f7f7f7;
+}
+
+
+
+.catalog-image {
+  width: 50%;
+}
+
+.catalog-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* RIGHT SIDE */
+
+.catalog-content {
+  width: 50%;
+  padding: 80px 70px;
+}
+
+.category {
+  color: #8f8f8f;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.catalog-content h2 {
+  font-size: 55px;
+  font-weight: 800;
+  color: #111;
+  margin-bottom: 30px;
+}
+
+.content {
+  color: #555;
+  font-size: 28px;
+  line-height: 1.8;
+  margin-bottom: 50px;
+}
+
+.catalog-content button {
+  background: #f0b219;
+  padding: 18px 35px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.catalog-content button:hover {
+  background: #d69b00;
+}
+
+/*==========================
+       SMALL BOXES
+===========================*/
+
+.small-boxes-heading {
+  text-align: center;
+  padding-top: 90px;
+  padding-bottom: 50px;
+}
+
+.small-boxes-heading h2 {
+  font-size: 55px;
+  font-weight: 800;
+  color: #d39a06;
+  margin-bottom: 20px;
+}
+
+.small-boxes-heading::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 2px;
+  background: #d6d6d6;
+  margin: auto;
+}
+
+/*==========================
+     BACKGROUND COLORS
+===========================*/
+
+#smallBoxOne {
+  background: white;
+}
+
+#smallBoxTwo {
+  background: #f5f5f5;
+}
+
+#smallBoxThree {
+  background: #f5f5f5;
+}
+
+#smallBoxFour {
+  background: white;
+}
+
+#smallBoxFive {
+  background: #f5f5f5;
+}
+
+/*==========================
+        CARDS CSS
+===========================*/
+
+.cards-container {
+  width: 80%;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 80px;
+
+  text-align: center;
+
+  padding: 70px 0;
+}
+
+.card {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.card h3 {
+  font-size: 28px;
+
+  font-weight: 400;
+
+  color: black;
+
+  margin-bottom: 20px;
+}
+
+.card p {
+  font-size: 17px;
+
+  color: #666;
+
+  line-height: 1.8;
+}
+
+/*==========================
+       CALL US BUTTON
+===========================*/
+
+.call-us {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  height: 100%;
+}
+
+.call-us button {
+  padding: 18px 30px;
+
+  font-size: 15px;
+
+  font-weight: 700;
+
+  line-height: 1.6;
+}
+
+.call-us button:hover {
+  background: #d69b00;
+}
+
+/*==========================
+      WHATSAPP SECTION
+===========================*/
+
+.whatsapp-section {
+  text-align: center;
+
+  padding: 100px 20px;
+}
+
+.whatsapp-section h2 {
+  font-size: 50px;
+
+  font-weight: 400;
+
+  color: black;
+
+  margin-bottom: 30px;
+}
+
+.whatsapp-section p {
+  font-size: 20px;
+
+  color: #666;
+
+  margin-bottom: 50px;
+
+  line-height: 1.8;
+}
+
+.whatsapp-btn {
+  background: #2f4651;
+
+  color: white;
+
+  padding: 20px 40px;
+
+  font-size: 16px;
+
+  font-weight: 700;
+}
+
+.whatsapp-btn:hover {
+  background: #1f323c;
+}
+
+.whatsapp-btn i {
+  font-size: 22px;
+
+  margin-right: 12px;
+}
+
+/*==========================
+        RESPONSIVE
+===========================*/
+
+@media (max-width: 1200px) {
+  .cards-container {
+    width: 90%;
+
+    gap: 50px;
+  }
+
+  .catalog-content {
+    padding: 60px;
+  }
+}
+
+@media (max-width: 992px) {
+  .catalog-container {
+    flex-direction: column;
+  }
+
+  .catalog-image,
+  .catalog-content {
+    width: 100%;
+  }
+
+  .catalog-title h1 {
+    font-size: 45px;
+  }
+
+  .catalog-content h2 {
+    font-size: 45px;
+  }
+
+  .small-boxes-heading h2 {
+    font-size: 45px;
+  }
+
+  .description {
+    font-size: 20px;
+  }
+
+  .content {
+    font-size: 22px;
+  }
+
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .whatsapp-section h2 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cards-container {
+    grid-template-columns: 1fr;
+
+    width: 85%;
+  }
+
+  .catalog-title {
+    padding: 60px 20px;
+  }
+
+  .catalog-title h1 {
+    font-size: 35px;
+  }
+
+  .catalog-content h2 {
+    font-size: 35px;
+  }
+
+  .small-boxes-heading h2 {
+    font-size: 35px;
+  }
+
+  .description {
+    font-size: 18px;
+  }
+
+  .content {
+    font-size: 18px;
+  }
+
+  .card h3 {
+    font-size: 26px;
+
+    font-weight: 400;
+
+    margin-bottom: 18px;
+  }
+
+  .card p {
+    font-size: 16px;
+
+    color: #666;
+
+    line-height: 1.9;
+  }
+
+  .whatsapp-section {
+    padding: 70px 20px;
+  }
+
+  .whatsapp-section h2 {
+    font-size: 32px;
+  }
+
+  .whatsapp-btn {
+    padding: 18px 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .catalog-content {
+    padding: 40px 30px;
+  }
+
+  .catalog-content button {
+    width: 100%;
+  }
+
+  .call-us button {
+    width: 100%;
+  }
+
+  .whatsapp-btn {
+    width: 100%;
+  }
+
+  .description {
+    line-height: 1.8;
+  }
+}
+
+
+
+/*==========================
+       MEDIUM BOXES
+===========================*/
+
+
+.medium-boxes-heading{
+
+    text-align:center;
+
+    padding-top:90px;
+
+    padding-bottom:50px;
+
+}
+
+
+.medium-boxes-heading h2{
+
+
+    font-size:55px;
+
+    font-weight:800;
+
+    color:#d39a06;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.medium-boxes-heading::after{
+
+
+    content:"";
+
+    width:80px;
+
+    height:2px;
+
+    background:#d6d6d6;
+
+    display:block;
+
+    margin:auto;
+
+}
+
+
+
+
+.medium-boxes-white{
+
+    background:white;
+
+}
+
+
+
+.medium-boxes-grey{
+
+
+    background:#f5f5f5;
+
+}
+
+
+/*==========================
+       LARGE BOXES
+===========================*/
+
+
+.large-boxes-heading{
+
+    text-align:center;
+
+    padding-top:90px;
+
+    padding-bottom:50px;
+
+}
+
+
+.large-boxes-heading h2{
+
+
+    font-size:55px;
+
+    font-weight:800;
+
+    color:#d39a06;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.large-boxes-heading::after{
+
+
+    content:"";
+
+    width:80px;
+
+    height:2px;
+
+    background:#d6d6d6;
+
+    display:block;
+
+    margin:auto;
+
+}
+
+
+
+.large-boxes-white{
+
+
+    background:white;
+
+}
+
+/*==========================
+    EXTRA LARGE BOXES
+===========================*/
+
+
+.extra-large-heading{
+
+    text-align:center;
+
+    padding-top:90px;
+
+    padding-bottom:50px;
+
+}
+
+
+
+.extra-large-heading h2{
+
+
+    font-size:55px;
+
+    font-weight:800;
+
+    color:#d39a06;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.extra-large-heading::after{
+
+
+    content:"";
+
+    width:80px;
+
+    height:2px;
+
+    background:#d6d6d6;
+
+    display:block;
+
+    margin:auto;
+
+}
+
+
+
+.extra-large-grey{
+
+
+    background:#f5f5f5;
+
+}
+
+
+
+
+/* CONTACT CARD */
+
+
+.contact-card{
+
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+
+
+.contact-card h3{
+
+
+    font-size:28px;
+
+    font-weight:400;
+
+    line-height:1.6;
+
+    margin-bottom:40px;
+
+}
+
+
+
+.contact-card button{
+
+
+    background:white;
+
+    border:1px solid #cccccc;
+
+    padding:15px 35px;
+
+    font-size:18px;
+
+}
+
+
+
+.contact-card button:hover{
+
+
+    background:#f5f5f5;
+
+}
+
+
+
+/*==========================
+     FLAT & TALL BOXES
+===========================*/
+
+
+.flat-boxes-heading{
+
+    text-align:center;
+
+    padding-top:90px;
+
+    padding-bottom:50px;
+
+}
+
+
+.flat-boxes-heading h2{
+
+
+    font-size:55px;
+
+    font-weight:800;
+
+    color:#d39a06;
+
+    margin-bottom:20px;
+
+}
+
+
+.flat-boxes-heading::after{
+
+
+    content:"";
+
+    width:80px;
+
+    height:2px;
+
+    background:#d6d6d6;
+
+    display:block;
+
+    margin:auto;
+
+}
+
+
+
+.flat-boxes-white{
+
+
+    background:white;
+
+}
+
+
+/*==========================
+      MAILER BOXES
+===========================*/
+
+
+.mailer-container{
+
+
+    width:100%;
+
+    display:flex;
+
+    align-items:center;
+
+    background:#f5f5f5;
+
+
+}
+
+
+
+/* LEFT SIDE */
+
+
+.mailer-image{
+
+
+    width:50%;
+
+}
+
+
+.mailer-image img{
+
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    display:block;
+
+}
+
+
+
+/* RIGHT SIDE */
+
+
+.mailer-content{
+
+
+    width:50%;
+
+    padding:80px 70px;
+
+}
+
+
+
+.mailer-small-title{
+
+
+    color:#8c8c8c;
+
+    font-size:15px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.mailer-content h2{
+
+
+    font-size:55px;
+
+    font-weight:800;
+
+    margin-bottom:30px;
+
+    color:black;
+
+}
+
+
+
+.mailer-description{
+
+
+    font-size:28px;
+
+    line-height:1.8;
+
+    color:#555;
+
+    margin-bottom:50px;
+
+}
+
+
+
+.mailer-content button{
+
+
+    background:#f0b219;
+
+    padding:18px 35px;
+
+    font-weight:700;
+
+}
+
+
+
+.mailer-content button:hover{
+
+
+    background:#d69b00;
+
+}
+
+
+/*==========================
+      MAILER PRODUCTS
+===========================*/
+
+
+.mailer-boxes-white{
+
+    background:white;
+
+}
+
+
+
+/*==========================
+    MAILER PRODUCTS-2
+===========================*/
+
+
+.mailer-boxes-grey{
+
+    background:#f5f5f5;
+
+}
+
+
+
+/* CUSTOM CARD */
+
+
+.custom-size{
+
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+
+
+.custom-size h3{
+
+
+    font-size:32px;
+
+    font-weight:400;
+
+    line-height:1.7;
+
+    margin-bottom:30px;
+
+}
+
+
+
+.custom-size p{
+
+
+    font-size:22px;
+
+    color:#666;
+
+    line-height:1.8;
+
+    margin-bottom:40px;
+
+}
+
+
+
+.custom-size button{
+
+
+    background:#f0b219;
+
+    padding:18px 35px;
+
+    font-weight:700;
+
+}
+
+
+
+.custom-size button:hover{
+
+
+    background:#d69b00;
+
+}
+
+
+
+/*==========================
+       PIZZA BOXES
+===========================*/
+
+
+.pizza-heading{
+
+    text-align:center;
+
+    padding-top:140px;
+
+    padding-bottom:60px;
+
+}
+
+
+.pizza-heading h2{
+
+
+    font-size:55px;
+
+    font-weight:800;
+
+    color:#d39a06;
+
+    margin-bottom:20px;
+
+}
+
+
+.pizza-heading::after{
+
+
+    content:"";
+
+    width:80px;
+
+    height:2px;
+
+    background:#d6d6d6;
+
+    display:block;
+
+    margin:auto;
+
+}
+
+
+
+
+.pizza-container{
+
+
+    width:100%;
+
+    display:flex;
+
+    align-items:flex-start;
+
+    background:#f5f5f5;
+
+}
+
+
+
+
+/* IMAGE */
+
+
+.pizza-image{
+
+    width:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:flex-start;
+
+    padding-top:60px;
+
+}
+
+
+
+.pizza-image img{
+
+
+    width:65%;
+
+    object-fit:cover;
+
+}
+
+
+
+
+
+/* RIGHT SIDE */
+
+
+.pizza-content{
+
+
+    width:50%;
+
+    padding:70px 50px;
+
+}
+
+.pizza-box{
+
+
+    margin-bottom:45px;
+
+}
+
+
+
+.pizza-box h3{
+
+
+    font-size:35px;
+
+    margin-bottom:20px;
+
+    font-weight:400;
+
+}
+
+
+
+.pizza-box p{
+
+
+    font-size:20px;
+
+    color:#666;
+
+    line-height:1.7;
+
+}
+
+
+/*==========================
+        RIGID BOXES
+===========================*/
+
+
+.rigid-heading{
+
+    text-align:center;
+
+    padding-top:120px;
+
+    padding-bottom:60px;
+
+}
+
+
+.rigid-heading h2{
+
+    font-size:55px;
+
+    font-weight:800;
+
+    color:#d39a06;
+
+    margin-bottom:20px;
+
+}
+
+
+.rigid-heading::after{
+
+    content:"";
+
+    width:80px;
+
+    height:2px;
+
+    background:#d6d6d6;
+
+    display:block;
+
+    margin:auto;
+
+}
+
+
+
+.rigid-container{
+
+    width:100%;
+
+    display:flex;
+
+    align-items:flex-start;
+
+    background:#f5f5f5;
+
+}
+
+
+
+/* IMAGE */
+
+
+.rigid-image{
+
+    width:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    padding-top:60px;
+
+}
+
+
+
+.rigid-image img{
+
+    width:65%;
+
+    object-fit:cover;
+
+}
+
+
+
+/* CONTENT */
+
+
+.rigid-content{
+
+    width:50%;
+
+    padding:70px 50px;
+
+}
+
+
+
+.rigid-box{
+
+    margin-bottom:45px;
+
+}
+
+
+.rigid-box h3{
+
+    font-size:35px;
+
+    font-weight:400;
+
+    margin-bottom:20px;
+
+}
+
+
+.rigid-box p{
+
+    font-size:20px;
+
+    color:#666;
+
+    line-height:1.7;
+
+}
+
+
+/*==========================
+      OTHER PRODUCTS
+===========================*/
+
+
+.other-heading{
+
+    text-align:center;
+
+    padding:120px 0 60px;
+
+}
+
+
+
+.other-heading h2{
+
+    font-size:55px;
+
+    font-weight:800;
+
+    color:#d39a06;
+
+    margin-bottom:20px;
+
+}
+
+
+.other-heading::after{
+
+
+    content:"";
+
+    width:80px;
+
+    height:2px;
+
+    background:#d6d6d6;
+
+    display:block;
+
+    margin:auto;
+
+
+}
+
+
+
+
+.other-products{
+
+    background:#f5f5f5;
+
+}
+
+
+
+.other-products .cards-container{
+
+
+    width:85%;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+
+    gap:70px;
+
+    padding:80px 0;
+
+
+    text-align:center;
+
+
+}
+
+
+
+
+.other-card img{
+
+
+    width:100%;
+
+    height:260px;
+
+    object-fit:cover;
+
+    margin-bottom:35px;
+
+
+}
+
+
+
+.other-card h3{
+
+
+    font-size:35px;
+
+    font-weight:400;
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+.other-card p{
+
+
+    font-size:22px;
+
+    line-height:1.7;
+
+    color:#666;
+
+
+}

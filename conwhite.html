@@ -1,0 +1,650 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Whitefield</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: #fff;
+      }
+      header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 99999;
+      }
+
+      .topbar {
+        width: 100%;
+        height: 34px;
+        background: rgb(246, 179, 24);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        color: #222;
+        font-weight: 500;
+      }
+
+      .navbar {
+        width: 100%;
+        height: 82px;
+        background: rgba(34, 34, 34, 0.96);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 45px;
+      }
+
+      /* ---------------- LOGO ---------------- */
+
+      .logo img {
+        width: 78px;
+
+        display: block;
+      }
+
+      /* ---------------- LINKS ---------------- */
+
+      .nav-links {
+        display: flex;
+
+        align-items: center;
+
+        gap: 35px;
+
+        list-style: none;
+      }
+
+      .nav-links li {
+        position: relative;
+      }
+
+      .nav-links li a {
+        color: white;
+
+        text-decoration: none;
+
+        font-size: 15px;
+
+        font-weight: 500;
+
+        display: flex;
+
+        align-items: center;
+
+        gap: 5px;
+
+        transition: 0.3s;
+      }
+
+      .nav-links li a:hover {
+        color: rgb(246, 179, 24);
+      }
+
+      /* ---------------- DROPDOWN ---------------- */
+
+      .dropdown-menu {
+        display: none;
+
+        position: absolute;
+
+        top: 45px;
+
+        left: 0;
+
+        width: 250px;
+
+        background: #222;
+
+        list-style: none;
+
+        border-radius: 5px;
+
+        overflow: hidden;
+
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+      }
+
+      .dropdown-menu li a {
+        display: block;
+
+        padding: 12px 18px;
+
+        color: white;
+
+        font-size: 14px;
+      }
+
+      .dropdown-menu li a:hover {
+        background: #333;
+
+        color: rgb(246, 179, 24);
+      }
+
+      .dropdown:hover .dropdown-menu {
+        display: block;
+      }
+
+      /* ---------------- USER ICON ---------------- */
+
+      .fa-user {
+        font-size: 18px;
+      }
+
+      /* ---------------- MOBILE ---------------- */
+
+      @media (max-width: 1000px) {
+        .navbar {
+          flex-direction: column;
+
+          height: auto;
+
+          padding: 20px;
+
+          gap: 20px;
+        }
+
+        .nav-links {
+          flex-wrap: wrap;
+
+          justify-content: center;
+
+          gap: 18px;
+        }
+      }
+
+      /* Banner */
+
+      .banner img {
+        width: 100%;
+        display: block;
+      }
+
+      /* Main Section */
+
+      .contact-page {
+        width: 80%;
+        margin: 40px auto 70px;
+        text-align: center;
+      }
+
+      .contact-page h1 {
+        color: rgb(196, 137, 12);
+        font-size: 38px;
+        font-weight: bold;
+        margin-bottom: 15px;
+      }
+
+      .line {
+        width: 55px;
+        height: 2px;
+        background: #ddd;
+        margin: 0 auto 45px;
+      }
+
+      /* Call Section */
+
+      .call {
+        margin-bottom: 55px;
+      }
+
+      .call p {
+        color: #666;
+        font-size: 15px;
+        margin: 8px 0;
+      }
+
+      .call h2 {
+        font-size: 28px;
+        color: #333;
+        margin: 10px 0;
+      }
+
+      .whatsapp-btn {
+        margin-top: 15px;
+        background: #40576d;
+        color: white;
+        border: none;
+        padding: 12px 24px;
+        border-radius: 4px;
+        font-size: 15px;
+        cursor: pointer;
+      }
+
+      .whatsapp-btn i {
+        color: #25d366;
+        margin-right: 8px;
+      }
+
+      /* Bottom */
+
+      .contact-info {
+        display: flex;
+        justify-content: center;
+        gap: 120px;
+        align-items: flex-start;
+      }
+
+      .left,
+      .right {
+        width: 340px;
+      }
+
+      .left h3,
+      .right h3 {
+        text-align: center;
+        font-size: 26px;
+        color: #333;
+        margin-bottom: 25px;
+      }
+
+      .left h4 {
+        margin-top: 25px;
+        margin-bottom: 10px;
+        text-align: center;
+        color: #444;
+      }
+
+      .left p {
+        color: #666;
+        line-height: 1.7;
+        margin-bottom: 15px;
+        text-align: center;
+      }
+
+      /* Hours */
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      table td {
+        padding: 6px 0;
+        color: #666;
+        font-size: 15px;
+      }
+
+      table td:last-child {
+        text-align: right;
+      }
+
+      .today td {
+        font-weight: bold;
+        color: #222;
+      }
+
+      .note {
+        margin-top: 22px;
+        text-align: center;
+        color: #666;
+        line-height: 1.6;
+      }
+
+      .content6 {
+        /* border: 2px solid red; */
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        gap: 8%;
+        background-color: rgb(0 0 0);
+
+        .box61 {
+          /* border: 2px solid rgb(230, 32, 151); */
+          height: 100px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 8%;
+
+          .box611 {
+            /* border: 2px solid red; */
+            width: 70%;
+            display: flex;
+            justify-content: space-evenly;
+
+            a {
+              color: white;
+              text-decoration: none;
+            }
+          }
+
+          .box612 {
+            /* border: 2px solid red; */
+            width: 60%;
+            display: flex;
+            justify-content: space-evenly;
+
+            a {
+              color: white;
+              text-decoration: none;
+            }
+          }
+
+          a:hover {
+            background-color: gray;
+            border-radius: 7px;
+          }
+        }
+        .box62 {
+          /* border: 2px solid red; */
+          height: 100px;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 9%;
+
+          .box621 {
+            /* border: 2px solid blue; */
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            color: white;
+          }
+
+          .box622 {
+            /* border: 2px solid blue; */
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            color: white;
+          }
+
+          .box623 {
+            /* border: 2px solid blue; */
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            color: white;
+
+            span {
+              color: rgb(196 137 12);
+              cursor: pointer;
+            }
+          }
+        }
+
+        .box63 {
+          /* border: 2px solid rgb(60, 255, 0); */
+          height: 100px;
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          padding: 3%;
+          color: white;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <header>
+      <div class="topbar">✴ Click here for our latest Product Catalog! ✴</div>
+
+      <nav class="navbar">
+        <div class="logo">
+          <a href="boxmakers.html">
+            <img
+              src="https://img1.wsimg.com/isteam/ip/6660eb61-ce99-445a-9a74-7fcee167fda9/BMI%20LOGO%20600X600%20for%20Google%20Ads-0bee712.jpg/:/rs=w:200,h:200,cg:true,m/cr=w:200,h:200/qt=q:95"
+              alt="Logo"
+            />
+          </a>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="boxmakers.html">HOME</a></li>
+
+          <li class="dropdown">
+            <a href="#">
+              CORRUGATED BOXES
+              <i class="fa-solid fa-angle-down"></i>
+            </a>
+
+            <ul class="dropdown-menu">
+              <li><a href="universalbox.html">Universal Boxes</a></li>
+
+              <li>
+                <a href="selflockingbox.html">Selflocking Mailer Boxes</a>
+              </li>
+
+              <li><a href="flattallbox.html">Flat & Tall Boxes</a></li>
+
+              <li><a href="extrastrong.html">Extra Strong Boxes</a></li>
+
+              <li><a href="giftingbox.html">Rigid Gifting Boxes</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="catalog.html">CATALOG</a>
+          </li>
+
+          <li>
+            <a href="movingsupplies.html">MOVING SUPPLIES</a>
+          </li>
+
+         
+          <li class="dropdown">
+            <a href="#">
+              MORE
+              <i class="fa-solid fa-angle-down"></i>
+            </a>
+
+            <ul class="dropdown-menu">
+              <li><a href="about.html">ABOUT US</a></li>
+
+              <li><a href="contact.html">CONTACT US</a></li>
+
+              <li><a href="packagematerial.html">PACKAGING MATERIAL</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-user"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Banner -->
+
+    <section class="banner">
+      <img src="conjp.png" alt="Whitefield Contact Banner" />
+    </section>
+
+    <!-- Contact -->
+
+    <section class="contact-page">
+      <h1>CONTACT US @ WHITEFIELD</h1>
+
+      <div class="line"></div>
+
+      <div class="call">
+        <p>Call us on</p>
+
+        <h2>+91 9888446013</h2>
+
+        <p>or</p>
+
+        <p>send us a WhatsApp message.</p>
+
+        <button class="whatsapp-btn">
+          <i class="fa-brands fa-whatsapp"></i>
+          Message us on WhatsApp
+        </button>
+      </div>
+
+      <div class="contact-info">
+        <!-- Left -->
+
+        <div class="left">
+          <h3>Box Makers India</h3>
+
+          <p>
+            Box Makers India,<br />
+            Vijaya Lakshmi Colony,<br />
+            Belathur Colony,<br />
+            Kadugodi,<br />
+            Bengaluru,<br />
+            Karnataka, India
+          </p>
+
+          <h4>Phone & WhatsApp</h4>
+
+          <p>+91 9888446013</p>
+
+          <h4>Landmark</h4>
+
+          <p>
+            Opposite Sri Sathya Sai<br />
+            Brindavan Ashrama
+          </p>
+
+          <p>5 Minutes walk from Whitefield Railway Station</p>
+
+          <p>5 Minutes walk from Whitefield Metro Station</p>
+        </div>
+
+        <!-- Right -->
+
+        <div class="right">
+          <h3>Hours</h3>
+
+          <table>
+            <tr>
+              <td>Mon</td>
+              <td>09:30 am – 05:30 pm</td>
+            </tr>
+
+            <tr>
+              <td>Tue</td>
+              <td>09:30 am – 05:30 pm</td>
+            </tr>
+
+            <tr class="today">
+              <td>Wed</td>
+              <td>09:30 am – 05:30 pm</td>
+            </tr>
+
+            <tr>
+              <td>Thu</td>
+              <td>09:30 am – 05:30 pm</td>
+            </tr>
+
+            <tr>
+              <td>Fri</td>
+              <td>09:30 am – 05:30 pm</td>
+            </tr>
+
+            <tr>
+              <td>Sat</td>
+              <td>09:30 am – 05:30 pm</td>
+            </tr>
+
+            <tr>
+              <td>Sun</td>
+              <td>Closed</td>
+            </tr>
+          </table>
+
+          <p class="note">
+            We are closed on Sundays &<br />
+            National Holidays.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="content5">
+      <div class="contact">
+        <h2>CONTACT US</h2>
+      </div>
+
+      <div class="box52">
+        <button>
+          <div class="whatsapp">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ02Zu33YkwMxUTIyO7t_qw_bywcv8LmeJ2wfFVQDbKbQ&s=10"
+              alt=""
+            />
+          </div>
+          <b>Click Here For Whatsapp Us</b>
+        </button>
+      </div>
+
+      <div class="email">
+        <p>+918217209612 / sales@protechb2b.com</p>
+      </div>
+    </div>
+
+    <div class="content6">
+      <div class="box61">
+        <div class="box611">
+          <a href="">PAYMENT MODES</a>
+          <a href="">FAQ'S</a>
+          <a href="">ABOUT US</a>
+          <a href="">CONTACT US</a>
+          <a href="">JOIN OUR TEAM</a>
+          <a href="">STANDARED BUYING PROCESS</a>
+        </div>
+
+        <div class="box612">
+          <a href="">SUBMIT BILLING DETAILS</a>
+          <a href="">PDC</a>
+          <a href="">PRIVACY POLICIES</a>
+          <a href="">BOARD TYPES</a>
+          <a href="">BID1133</a>
+        </div>
+      </div>
+
+      <div class="box62">
+        <div class="box621">
+          <h4>BOX MAKERS INDIA</h4>
+        </div>
+
+        <div class="box622">
+          <p>
+            Products display & Billing Address: No 679, 1st Floor, 8th Main,
+            14th Cross, JP Nagar 2nd Phase, Bangalore - 560078
+          </p>
+        </div>
+        <div class="box623">
+          <p>
+            JP Nagar <span>+918217209612</span> / Whitefield
+            <span>+918884446013</span>
+          </p>
+        </div>
+
+        <div class="box63">
+          <p>Copyright © 2021 Box Makers India - All Rights Reserved.</p>
+          <p>ProTech Group</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

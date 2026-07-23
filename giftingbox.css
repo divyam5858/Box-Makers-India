@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.giftingboximage{
+padding-left: 150px;
+padding-top: 50px;
+}
+.giftingboxtext {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    color: rgb(196 137 12);
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-size: 45px;
+  }
+  h1::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 2px;
+    background: gray;
+    margin: 15px auto 0;
+  }
+}
+.giftingboxparagraph {
+  width: 100%;
+  display: flex;
+  .giftingboxleft {
+    width: 65%;
+    display: flex;
+    padding-left: 150px;
+    flex-direction: column;
+    gap: 20px;
+  }.giftingboxleft dd{
+    padding-left: 50px;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+p{
+    font-size: 20px;
+}
+  .giftingboxright {
+    padding-left: 50px;
+    width: 35%;
+    button {
+      border-radius: 5px;
+      width: 280px;
+      height: 50px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      background-color: rgb(243, 171, 16);
+      outline: none;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #d9ce65;
+    }
+  }
+}

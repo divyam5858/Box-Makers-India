@@ -1,0 +1,506 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="extrastrong.css" />
+  </head>
+  <style>
+    header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:99999;
+}
+
+.top-bar{
+    width:100%;
+    height:34px;
+    background:rgb(246,179,24);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:16px;
+    color:#222;
+    font-weight:500;
+}
+
+.navbar{
+    width:100%;
+    height:82px;
+    background:rgba(34,34,34,.96);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 45px;
+}
+
+/* ---------------- LOGO ---------------- */
+
+.logo img{
+
+    width:78px;
+
+    display:block;
+
+}
+
+/* ---------------- LINKS ---------------- */
+
+.nav-links{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:35px;
+
+    list-style:none;
+
+}
+
+.nav-links li{
+
+    position:relative;
+
+}
+
+.nav-links li a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:15px;
+
+    font-weight:500;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:5px;
+
+    transition:.3s;
+
+}
+
+.nav-links li a:hover{
+
+    color:rgb(246,179,24);
+
+}
+
+/* ---------------- DROPDOWN ---------------- */
+
+.dropdown-menu{
+
+    display:none;
+
+    position:absolute;
+
+    top:45px;
+
+    left:0;
+
+    width:250px;
+
+    background:#222;
+
+    list-style:none;
+
+    border-radius:5px;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.25);
+
+}
+
+.dropdown-menu li a{
+
+    display:block;
+
+    padding:12px 18px;
+
+    color:white;
+
+    font-size:14px;
+
+}
+
+.dropdown-menu li a:hover{
+
+    background:#333;
+
+    color:rgb(246,179,24);
+
+}
+
+.dropdown:hover .dropdown-menu{
+
+    display:block;
+
+}
+
+/* ---------------- USER ICON ---------------- */
+
+.fa-user{
+
+    font-size:18px;
+
+}
+
+/* ---------------- MOBILE ---------------- */
+
+@media(max-width:1000px){
+
+    .navbar{
+
+        flex-direction:column;
+
+        height:auto;
+
+        padding:20px;
+
+        gap:20px;
+
+    }
+
+    .nav-links{
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+        gap:18px;
+
+    }
+
+}
+
+    .content6 {
+        width: 100%;
+        background: #000;
+        color: #fff;
+        padding: 40px 0 20px;
+        margin-top: 70px;
+      }
+
+      .box61 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 30px;
+      }
+
+      .box611,
+      .box612 {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+      .box611 a,
+      .box612 a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 14px;
+      }
+
+      .box611 a:hover,
+      .box612 a:hover {
+        color: rgb(196, 137, 12);
+      }
+
+      .box62 {
+        text-align: center;
+      }
+
+      .box621 h4 {
+        margin-bottom: 15px;
+      }
+
+      .box622 {
+        margin-bottom: 15px;
+      }
+
+      .box623 {
+        margin-bottom: 25px;
+      }
+
+      .box623 span {
+        color: rgb(196, 137, 12);
+      }
+
+      .box63 {
+        width: 90%;
+        margin: auto;
+        padding-top: 20px;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        display: flex;
+        justify-content: space-between;
+      }
+
+      @media (max-width: 768px) {
+        .box63 {
+          flex-direction: column;
+          gap: 10px;
+          text-align: center;
+        }
+
+        .box611,
+        .box612 {
+          flex-direction: column;
+          gap: 10px;
+        }
+      }
+  </style>
+
+  <body>
+    <header>
+
+    <div class="top-bar">
+        ✴ Click here for our latest Product Catalog! ✴
+    </div>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <img src="https://img1.wsimg.com/isteam/ip/6660eb61-ce99-445a-9a74-7fcee167fda9/BMI%20LOGO%20600X600%20for%20Google%20Ads-0bee712.jpg/:/rs=w:200,h:200,cg:true,m/cr=w:200,h:200/qt=q:95" alt="Box Makers India">
+        </div>
+
+        <ul class="nav-links">
+
+            <li><a href="boxmakers.html">HOME</a></li>
+
+            <li class="dropdown">
+                <a href="#">
+                    CORRUGATED BOXES
+                    <i class="fa-solid fa-angle-down"></i>
+                </a>
+
+                <ul class="dropdown-menu">
+                    <li><a href="universalbox.html">Universal Boxes</a></li>
+                    <li><a href="selflockingbox.html">Selflocking Mailer Boxes</a></li>
+                    <li><a href="flattallbox.html">Flat & Tall Boxes</a></li>
+                    <li><a href="extrastrong.html">Extra Strong Boxes</a></li>
+                    <li><a href="giftingbox.html">Rigid Gifting Boxes</a></li>
+                </ul>
+            </li>
+
+            <li><a href="catalog.html">CATALOG</a></li>
+
+            <li><a href="movingsupplies.html">MOVING SUPPLIES</a></li>
+
+           
+
+            <li class="dropdown">
+                <a href="#">
+                    MORE
+                    <i class="fa-solid fa-angle-down"></i>
+                </a>
+
+                <ul class="dropdown-menu">
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                    <li><a href="packagematerial.html">PACKAGING MATERIAL</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-user"></i>
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+    <div class="extrastrongcontainer">
+      <div class="extrastrongimage">
+        <img
+          src="https://img1.wsimg.com/isteam/stock/21275/:/cr=t:16.67%25,l:0%25,w:100%25,h:66.67%25/rs=w:1920,h:960,cg:true"
+          alt=""
+        />
+      </div>
+
+      <div class="extrastrongtext">
+        <h1>EXTRA STRONG BOXES</h1>
+        <div class="line"></div>
+      </div>
+
+       <div class="extrastrongparagraph">
+        <div class="extrastrongleft">
+          <p>
+            Flat and tall corrugated shipping boxes refer to packaging solutions
+            that have specific dimensions emphasizing their height and typically
+            have a design that allows for a flatter profile. These boxes are
+            commonly used for shipping and packaging various goods, providing a
+            balance between maximizing vertical space and minimizing the overall
+            footprint. Here are some key characteristics and applications Flat and tall corrugated shipping boxes refer to packaging solutions
+            that have specific dimensions emphasizing their height and typically
+            have a design that allows for a flatter profile. These boxes are
+            commonly used for shipping and packaging various goods, providing a
+            balance between maximizing vertical space and minimizing the overall
+            footprint. Here are some key characteristics :
+          </p>
+          <h2>Material composition :</h2>
+
+          <dl>
+            <dd>
+              Flat Profile : These boxes are designed to have a relatively low
+              width and depth compared to their height. This design allows for
+              efficient stacking and optimal use of vertical space during
+              storage and transportation.
+            </dd>
+
+            <dd>
+              Tall Height :The emphasis on height makes these boxes ideal for
+              accommodating taller or elongated items while maintaining the
+              overall structural integrity of the packaging.
+            </dd>
+          </dl>
+
+          <h2>Strength and durability :</h2>
+
+          <dl>
+            <dd>
+              Posters and Prints: Tall shipping boxes are often used to ship
+              posters, prints, and other flat items that need protection against
+              bending or folding during transit.
+            </dd>
+
+            <dd>
+              Tubes and Cylinders: Some flat and tall boxes may have a
+              cylindrical or tube-like shape, making them suitable for shipping
+              items such as rolled documents, blueprints, or cylindrical
+              products.
+            </dd>
+
+            <dd>
+              Vertical Products: Items that have a natural vertical orientation,
+              such as certain tools, artwork, or display materials, can benefit
+              from the design of flat and tall corrugated boxes.
+            </dd>
+          </dl>
+
+          <h2>Impact protection :</h2>
+
+          <dl>
+            <dd>
+              Corrugated Cardboard: Like standard corrugated shipping boxes,
+              these flat and tall boxes are typically made from corrugated
+              cardboard. This material provides strength, durability, and some
+              level of protection against external elements.
+            </dd>
+          </dl>
+
+          <h2>Cuztomization :</h2>
+
+          <dl>
+            <dd>
+              Custom Sizing: Manufacturers often offer customization options for
+              the dimensions of these boxes to suit the specific requirements of
+              the products being shipped.
+            </dd>
+            <dd>
+              Printing and Branding: Flat and tall shipping boxes can be
+              customized with printing, labels, or branding to enhance the
+              professional appearance and promote the brand identity.
+            </dd>
+          </dl>
+
+          <h2>Cost effecting packing solution :</h2>
+
+          <dl>
+            <dd>
+              Multiple Uses: While these boxes are commonly associated with
+              shipping, their design can also make them suitable for storage
+              purposes, especially for items that need to be stored vertically.
+            </dd>
+          </dl>
+
+          <h2>Printability :</h2>
+
+          <dl>
+            <dd>
+              Custom Sizing: Manufacturers often offer customization options for
+              the dimensions of these boxes to suit the specific requirements of
+              the products being shipped.
+            </dd>
+            <dd>
+              Printing and Branding: Flat and tall shipping boxes can be
+              customized with printing, labels, or branding to enhance the
+              professional appearance and promote the brand identity.
+            </dd>
+          </dl>
+
+          <p>
+            It's important for businesses to consider the dimensions and
+            structural strength of these boxes based on the specific
+            requirements of the items they intend to ship or store.
+            Customization options and choosing the right packaging materials
+            contribute to ensuring that the products reach their destination
+            safely and in good condition.
+          </p>
+        </div>
+        <div class="extrastrongright">
+          <button><b>CLICK HERE FOR CATALOG</b></button>
+        </div>
+
+    </div>
+     <footer class="content6">
+      <div class="box61">
+        <div class="box611">
+          <a href="#">PAYMENT MODES</a>
+          <a href="#">FAQ'S</a>
+          <a href="#">ABOUT US</a>
+          <a href="#">CONTACT US</a>
+          <a href="#">JOIN OUR TEAM</a>
+          <a href="#">STANDARD BUYING PROCESS</a>
+        </div>
+
+        <div class="box612">
+          <a href="#">SUBMIT BILLING DETAILS</a>
+          <a href="#">PDC</a>
+          <a href="#">PRIVACY POLICIES</a>
+          <a href="#">BOARD TYPES</a>
+          <a href="#">BID1133</a>
+        </div>
+      </div>
+
+      <div class="box62">
+        <div class="box621">
+          <h4>BOX MAKERS INDIA</h4>
+        </div>
+
+        <div class="box622">
+          <p>
+            Products display &amp; Billing Address: No 679, 1st Floor, 8th Main,
+            14th Cross, JP Nagar 2nd Phase, Bangalore - 560078
+          </p>
+        </div>
+
+        <div class="box623">
+          <p>
+            JP Nagar <span>+918217209612</span> / Whitefield
+            <span>+918884446013</span>
+          </p>
+        </div>
+
+        <div class="box63">
+          <p>Copyright © 2021 Box Makers India - All Rights Reserved.</p>
+          <p>ProTech Group</p>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>

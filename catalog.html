@@ -1,0 +1,556 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Product Catalog</title>
+
+    <link rel="stylesheet" href="catalog.css" />
+
+    <!-- Whatsapp Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <style>
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 99999;
+    }
+
+    .topbar {
+      width: 100%;
+      height: 34px;
+      background: rgb(246, 179, 24);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 16px;
+      color: #222;
+      font-weight: 500;
+    }
+
+    .navbar {
+      width: 100%;
+      height: 82px;
+      background: rgba(34, 34, 34, 0.96);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 45px;
+    }
+
+    /* ---------------- LOGO ---------------- */
+
+    .logo img {
+      width: 78px;
+
+      display: block;
+    }
+
+    /* ---------------- LINKS ---------------- */
+
+    .nav-links {
+      display: flex;
+
+      align-items: center;
+
+      gap: 35px;
+
+      list-style: none;
+    }
+
+    .nav-links li {
+      position: relative;
+    }
+
+    .nav-links li a {
+      color: white;
+
+      text-decoration: none;
+
+      font-size: 15px;
+
+      font-weight: 500;
+
+      display: flex;
+
+      align-items: center;
+
+      gap: 5px;
+
+      transition: 0.3s;
+    }
+
+    .nav-links li a:hover {
+      color: rgb(246, 179, 24);
+    }
+
+    /* ---------------- DROPDOWN ---------------- */
+
+    .dropdown-menu {
+      display: none;
+
+      position: absolute;
+
+      top: 45px;
+
+      left: 0;
+
+      width: 250px;
+
+      background: #222;
+
+      list-style: none;
+
+      border-radius: 5px;
+
+      overflow: hidden;
+
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    }
+
+    .dropdown-menu li a {
+      display: block;
+
+      padding: 12px 18px;
+
+      color: white;
+
+      font-size: 14px;
+    }
+
+    .dropdown-menu li a:hover {
+      background: #333;
+
+      color: rgb(246, 179, 24);
+    }
+
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    /* ---------------- USER ICON ---------------- */
+
+    .fa-user {
+      font-size: 18px;
+    }
+
+    /* ---------------- MOBILE ---------------- */
+
+    @media (max-width: 1000px) {
+      .navbar {
+        flex-direction: column;
+
+        height: auto;
+
+        padding: 20px;
+
+        gap: 20px;
+      }
+
+      .nav-links {
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 18px;
+      }
+    }
+    .content6 {
+      width: 100%;
+      background: #000;
+      color: #fff;
+      padding: 40px 0 20px;
+      margin-top: 70px;
+    }
+
+    .box61 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+
+    .box611,
+    .box612 {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .box611 a,
+    .box612 a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .box611 a:hover,
+    .box612 a:hover {
+      color: rgb(196, 137, 12);
+    }
+
+    .box62 {
+      text-align: center;
+    }
+
+    .box621 h4 {
+      margin-bottom: 15px;
+    }
+
+    .box622 {
+      margin-bottom: 15px;
+    }
+
+    .box623 {
+      margin-bottom: 25px;
+    }
+
+    .box623 span {
+      color: rgb(196, 137, 12);
+    }
+
+    .box63 {
+      width: 90%;
+      margin: auto;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+      display: flex;
+      justify-content: space-between;
+    }
+
+    @media (max-width: 768px) {
+      .box63 {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+      }
+
+      .box611,
+      .box612 {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+
+  <body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <header>
+      <div class="topbar">✴ Click here for our latest Product Catalog! ✴</div>
+
+      <nav class="navbar">
+        <div class="logo">
+          <a href="boxmakers.html">
+            <img
+              src="https://img1.wsimg.com/isteam/ip/6660eb61-ce99-445a-9a74-7fcee167fda9/BMI%20LOGO%20600X600%20for%20Google%20Ads-0bee712.jpg/:/rs=w:200,h:200,cg:true,m/cr=w:200,h:200/qt=q:95"
+              alt="Logo"
+            />
+          </a>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="boxmakers.html">HOME</a></li>
+
+          <li class="dropdown">
+            <a href="#">
+              CORRUGATED BOXES
+              <i class="fa-solid fa-angle-down"></i>
+            </a>
+
+            <ul class="dropdown-menu">
+              <li><a href="universalbox.html">Universal Boxes</a></li>
+
+              <li>
+                <a href="selflockingbox.html">Selflocking Mailer Boxes</a>
+              </li>
+
+              <li><a href="flattallbox.html">Flat & Tall Boxes</a></li>
+
+              <li><a href="extrastrong.html">Extra Strong Boxes</a></li>
+
+              <li><a href="giftingbox.html">Rigid Gifting Boxes</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="catalog.html">CATALOG</a>
+          </li>
+
+          <li>
+            <a href="movingsupplies.html">MOVING SUPPLIES</a>
+          </li>
+
+          <li>
+            <a href="#">E-COM CORNER</a>
+          </li>
+
+          <li class="dropdown">
+            <a href="#">
+              MORE
+              <i class="fa-solid fa-angle-down"></i>
+            </a>
+
+            <ul class="dropdown-menu">
+              <li><a href="about.html">ABOUT US</a></li>
+
+              <li><a href="contact.html">CONTACT US</a></li>
+
+              <li><a href="packagematerial.html">PACKAGING MATERIAL</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-user"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="catalog-title">
+      <p class="small-title">Box Makers India</p>
+
+      <h1>PRODUCT CATALOG</h1>
+
+      <p class="description">
+        Corrugated boxes from our catalog are typically in
+        <b>stock.</b>
+
+        Just pick the sizes you need and
+        <b>contact us</b>
+
+        for more information!
+      </p>
+    </section>
+
+    <section class="catalog-container">
+      <!-- Left Image -->
+
+      <div class="catalog-image">
+        <img
+          src="https://img1.wsimg.com/isteam/stock/106645/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:1280,h:853/qt=q:30"
+          alt="Universal Boxes"
+        />
+      </div>
+
+      <!-- Right Content -->
+
+      <div class="catalog-content">
+        <p class="category">Pinned & Glued</p>
+
+        <h2>UNIVERSAL BOXES</h2>
+
+        <p class="content">
+          A Universal box is a common box design with flaps at the top and
+          bottom that fold to create the box. The Universal boxes can be die cut
+          or RSC (Regular Slotted Container).
+        </p>
+
+        <button id="rscBtn">LEARN MORE ABOUT RSC BOXES</button>
+      </div>
+    </section>
+
+    <section class="small-boxes-heading">
+      <h2>SMALL BOXES</h2>
+    </section>
+
+    <section class="small-boxes-white" id="smallBoxOne">
+      <div class="cards-container"></div>
+    </section>
+
+    <section class="small-boxes-grey" id="smallBoxTwo">
+      <div class="cards-container"></div>
+    </section>
+
+    <section class="whatsapp-section">
+      <h2>Didn't find what you're looking for!!!</h2>
+
+      <p>Send us a Whatsapp message, we will help you with that.</p>
+
+      <button class="whatsapp-btn" id="whatsapp-btn">
+        <i class="fa-brands fa-whatsapp"></i>
+
+        Message us on Whatsapp
+      </button>
+    </section>
+
+    <section class="small-boxes-grey" id="smallBoxThree">
+      <div class="cards-container"></div>
+    </section>
+
+    <section class="small-boxes-white" id="smallBoxFour">
+      <div class="cards-container"></div>
+    </section>
+
+    <section class="small-boxes-grey" id="smallBoxFive">
+      <div class="cards-container"></div>
+    </section>
+
+    <section class="medium-boxes-heading">
+      <h2>MEDIUM BOXES</h2>
+    </section>
+
+    <section class="medium-boxes-white" id="mediumBoxOne">
+      <div class="cards-container"></div>
+    </section>
+
+    <section class="medium-boxes-grey" id="mediumBoxTwo">
+      <div class="cards-container"></div>
+    </section>
+
+    <section class="large-boxes-heading">
+      <h2>LARGE BOXES</h2>
+    </section>
+
+    <section class="large-boxes-white" id="largeBoxOne">
+      <div class="cards-container"></div>
+    </section>
+
+    <section class="extra-large-heading">
+      <h2>EXTRA LARGE BOXES</h2>
+    </section>
+
+    <section class="extra-large-grey" id="extraLargeBoxOne">
+      <div class="cards-container"></div>
+    </section>
+
+    <section class="flat-boxes-heading">
+      <h2>FLAT & TALL BOXES</h2>
+    </section>
+
+    <section class="flat-boxes-white" id="flatBoxOne">
+      <div class="cards-container"></div>
+    </section>
+
+    <section class="mailer-container">
+      <div class="mailer-image">
+        <img
+          src="https://img1.wsimg.com/isteam/ip/6660eb61-ce99-445a-9a74-7fcee167fda9/Corrugated%20Boxes.jpg/:/cr=t:0.61%25,l:0%25,w:51.02%25,h:51.02%25"
+          alt="Mailer Boxes"
+        />
+      </div>
+
+      <div class="mailer-content">
+        <p class="mailer-small-title">Self Locking</p>
+
+        <h2>MAILER / SELF LOCKING BOXES</h2>
+
+        <p class="mailer-description">
+          A mailer or self locking mailer box is a strong and customizable
+          cardboard packaging designed for secure shipping of products, often
+          used in e-commerce for safe delivery and branding. Its also called as
+          REFT Box (Roll End Front Tuck)
+        </p>
+
+        <button id="mailerBtn">LEARN MORE ABOUT MAILER BOXES</button>
+      </div>
+    </section>
+
+    <section class="mailer-boxes-white" id="mailerBoxOne">
+      <div class="cards-container"></div>
+    </section>
+
+    <section class="mailer-boxes-grey" id="mailerBoxTwo">
+      <div class="cards-container"></div>
+    </section>
+
+    <section class="pizza-heading">
+      <h2>PIZZA BOXES</h2>
+    </section>
+
+    <section class="pizza-container">
+      <div class="pizza-image">
+        <img
+          src="https://img1.wsimg.com/isteam/ip/6660eb61-ce99-445a-9a74-7fcee167fda9/Pizza%20Boxes.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:400,cg:true/qt=q:32"
+          alt="Pizza Boxes"
+        />
+      </div>
+
+      <div class="pizza-content" id="pizzaContent"></div>
+    </section>
+
+    <section class="rigid-heading">
+      <h2>RIGID BOXES</h2>
+    </section>
+
+    <section class="rigid-container">
+      <div class="rigid-image">
+        <img
+          src="https://img1.wsimg.com/isteam/ip/6660eb61-ce99-445a-9a74-7fcee167fda9/5.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:400,cg:true/qt=q:32"
+          alt="Rigid Boxes"
+        />
+      </div>
+
+      <div class="rigid-content" id="rigidContent"></div>
+    </section>
+
+    <section class="other-heading">
+      <h2>OTHER PRODUCTS</h2>
+    </section>
+
+    <section class="other-products" id="otherProducts">
+      <div class="cards-container"></div>
+    </section>
+    <footer class="content6">
+      <div class="box61">
+        <div class="box611">
+          <a href="#">PAYMENT MODES</a>
+          <a href="#">FAQ'S</a>
+          <a href="#">ABOUT US</a>
+          <a href="#">CONTACT US</a>
+          <a href="#">JOIN OUR TEAM</a>
+          <a href="#">STANDARD BUYING PROCESS</a>
+        </div>
+
+        <div class="box612">
+          <a href="#">SUBMIT BILLING DETAILS</a>
+          <a href="#">PDC</a>
+          <a href="#">PRIVACY POLICIES</a>
+          <a href="#">BOARD TYPES</a>
+          <a href="#">BID1133</a>
+        </div>
+      </div>
+
+      <div class="box62">
+        <div class="box621">
+          <h4>BOX MAKERS INDIA</h4>
+        </div>
+
+        <div class="box622">
+          <p>
+            Products display &amp; Billing Address: No 679, 1st Floor, 8th Main,
+            14th Cross, JP Nagar 2nd Phase, Bangalore - 560078
+          </p>
+        </div>
+
+        <div class="box623">
+          <p>
+            JP Nagar <span>+918217209612</span> / Whitefield
+            <span>+918884446013</span>
+          </p>
+        </div>
+
+        <div class="box63">
+          <p>Copyright © 2021 Box Makers India - All Rights Reserved.</p>
+          <p>ProTech Group</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="catalog.js"></script>
+  </body>
+</html>

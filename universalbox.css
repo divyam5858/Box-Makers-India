@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.image {
+  padding-left: 140px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.universaboxtext {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    color: rgb(196 137 12);
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-size: 45px;
+  }
+  h1::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 2px;
+    background: gray;
+    margin: 15px auto 0;
+  }
+}
+.paragraphs {
+  width: 100%;
+  display: flex;
+  .left {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .pone {
+      font-size: 17px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      padding-left: 150px;
+    }
+  }
+  .right {
+    width: 35%;
+    button {
+      border-radius: 5px;
+      width: 280px;
+      height: 50px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      background-color: rgb(243, 171, 16);
+      outline: none;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #d9ce65;
+    }
+  }
+}

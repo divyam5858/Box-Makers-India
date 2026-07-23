@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="app.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+      integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    /* ---------- TOP BAR ---------- */
+
+    .top-bar {
+      width: 100%;
+      height: 32px;
+      background: rgb(246, 179, 24);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 16px;
+      color: #222;
+      font-weight: 500;
+    }
+
+    /* ---------- NAVBAR ---------- */
+
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 9999;
+
+      width: 100%;
+      height: 82px;
+
+      background: rgba(32, 32, 32, 0.96);
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      padding: 0 35px;
+    }
+
+    .logo img {
+      width: 78px;
+      display: block;
+    }
+
+    /* ---------- NAV LINKS ---------- */
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 35px;
+    }
+
+    .nav-links li {
+      position: relative;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 15px;
+      font-weight: 500;
+      transition: 0.3s;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .nav-links a:hover {
+      color: rgb(246, 179, 24);
+    }
+
+    /* ---------- DROPDOWN ---------- */
+
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 40px;
+      left: 0;
+      min-width: 240px;
+
+      background: #222;
+
+      list-style: none;
+
+      border-radius: 4px;
+
+      overflow: hidden;
+
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    }
+
+    .dropdown-menu li a {
+      display: block;
+      padding: 12px 18px;
+      color: white;
+      font-size: 14px;
+    }
+
+    .dropdown-menu li a:hover {
+      background: #333;
+      color: rgb(246, 179, 24);
+    }
+
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    /* ---------- ICON ---------- */
+
+    .fa-user {
+      font-size: 18px;
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+
+    @media (max-width: 992px) {
+      .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        gap: 20px;
+      }
+
+      .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 18px;
+      }
+    }
+    .content6 {
+      width: 100%;
+      background: #000;
+      color: #fff;
+      padding: 40px 0 20px;
+      margin-top: 70px;
+    }
+
+    .box61 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+
+    .box611,
+    .box612 {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .box611 a,
+    .box612 a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .box611 a:hover,
+    .box612 a:hover {
+      color: rgb(196, 137, 12);
+    }
+
+    .box62 {
+      text-align: center;
+    }
+
+    .box621 h4 {
+      margin-bottom: 15px;
+    }
+
+    .box622 {
+      margin-bottom: 15px;
+    }
+
+    .box623 {
+      margin-bottom: 25px;
+    }
+
+    .box623 span {
+      color: rgb(196, 137, 12);
+    }
+
+    .box63 {
+      width: 90%;
+      margin: auto;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+      display: flex;
+      justify-content: space-between;
+    }
+
+    @media (max-width: 768px) {
+      .box63 {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+      }
+
+      .box611,
+      .box612 {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+  <body>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+   
+    <header>
+      <div class="top-bar">✴ Click here for our latest Product Catalog! ✴</div>
+
+      <nav class="navbar">
+        <div class="logo">
+          <img
+            src="https://img1.wsimg.com/isteam/ip/6660eb61-ce99-445a-9a74-7fcee167fda9/BMI%20LOGO%20600X600%20for%20Google%20Ads-0bee712.jpg/:/rs=w:200,h:200,cg:true,m/cr=w:200,h:200/qt=q:95"
+            alt="Box Makers India"
+          />
+        </div>
+
+        <ul class="nav-links">
+          <li>
+            <a href="">HOME</a>
+          </li>
+
+          <li class="dropdown">
+            <a href="#">
+              CORRUGATED BOXES
+              <i class="fa-solid fa-angle-down"></i>
+            </a>
+
+            <ul class="dropdown-menu">
+              <li>
+                <a
+                  href="universalbox.html"
+                >
+                  Universal Boxes
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="selflockingbox.html"
+                >
+                  Selflocking Mailor Boxes
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="flattallbox.html"
+                >
+                  Flat & Tall Boxes
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="extrastrong.html"
+                >
+                  Extra Strong Boxes
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="giftingbox.html"
+                >
+                  Rigid Gifting Boxes
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <a
+              href="catalog.html"
+            >
+              CATALOG
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="movingsupplies.html"
+            >
+              MOVING SUPPLIES
+            </a>
+          </li>
+
+          
+
+          <li class="dropdown">
+            <a href="#">
+              MORE
+              <i class="fa-solid fa-angle-down"></i>
+            </a>
+
+            <ul class="dropdown-menu">
+              <li>
+                <a
+                  href="about.html"
+                >
+                  ABOUT US
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="contact.html"
+                >
+                  CONTACT US
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="packagematerial.html"
+                >
+                  PACKAGING MATERIAL
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="">
+              <i class="fa-solid fa-user"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="Moving-supplies">
+      <h1 class="title">MOVING SUPPLIES</h1>
+
+      <div class="about-container">
+        <div class="info">
+          <h2>
+            Have a look at our catalog exclusively designed for moving supplies.
+          </h2>
+
+          <p>
+            Contact us to know more about the size, price & images of the
+            products.
+          </p>
+
+          <button>
+            <i class="fa-brands fa-whatsapp"></i> Message us on WhatsApp
+          </button>
+
+          <h3>Box Makers India</h3>
+
+          <h3>Hours</h3>
+          <p>Open today 09:30 am – 05:30 pm</p>
+          <p>We are closed on Sundays & national holidays.</p>
+        </div>
+
+        <div class="img">
+          <img
+            src="https://img1.wsimg.com/isteam/stock/BN9jgWm/:/cr=t:0%25,l:0.01%25,w:99.98%25,h:100%25/rs=w:984,h:657"
+            alt="image loading......."
+          />
+        </div>
+      </div>
+    </div>
+
+    <section class="small-section">
+      <h2 class="catalog-title">Small Moving Carton Boxes</h2>
+      <div id="small-boxes" class="product-grid"></div>
+    </section>
+
+    <section class="large-section">
+      <h2 class="catalog-title">Large Moving Carton Boxes</h2>
+      <div id="large-boxes" class="product-grid"></div>
+    </section>
+
+    <section class="extra-section">
+      <h2 class="catalog-title">Extra Large Moving Carton Boxes</h2>
+      <div id="extra-large-boxes" class="product-grid"></div>
+    </section>
+
+    <section class="packing-material">
+      <h2 class="section-title">Packing Material</h2>
+      <div id="packing-material" class="packing-grid"></div>
+    </section>
+
+    <section class="contact-section">
+      <div class="contact-container">
+        <h2 class="contact-title">CONTACT US</h2>
+
+        <h3>Box Makers India</h3>
+
+        <p>No 679, 1st Floor Pinto Das Tower</p>
+        <p>8th Main, 14th Cross, JP Nagar 2nd Phase</p>
+        <p>Bangalore - 560078</p>
+
+        <br />
+
+        <p>Above Ultra Biriyani Paradise.</p>
+
+        <br />
+
+        <h4>Phone</h4>
+        <p class="phone">9900009183</p>
+
+        <button class="whatsapp-btn">
+          <i class="fa-brands fa-whatsapp"></i>
+          Message us on WhatsApp
+        </button>
+
+        <h3>Box Makers India</h3>
+
+        <p>
+          Box Makers India, 28th Main, Jeewan Griha Colony, 2nd Phase, J. P.
+          Nagar, Bengaluru, Karnataka, India
+        </p>
+
+        <h3>Hours</h3>
+
+        <p class="hours-status">
+          <strong>Open today</strong>
+          <span>09:30 am – 05:30 pm</span>
+          <i class="fa-solid fa-caret-down"></i>
+        </p>
+      </div>
+    </section>
+    <footer class="content6">
+      <div class="box61">
+        <div class="box611">
+          <a href="#">PAYMENT MODES</a>
+          <a href="#">FAQ'S</a>
+          <a href="#">ABOUT US</a>
+          <a href="#">CONTACT US</a>
+          <a href="#">JOIN OUR TEAM</a>
+          <a href="#">STANDARD BUYING PROCESS</a>
+        </div>
+
+        <div class="box612">
+          <a href="#">SUBMIT BILLING DETAILS</a>
+          <a href="#">PDC</a>
+          <a href="#">PRIVACY POLICIES</a>
+          <a href="#">BOARD TYPES</a>
+          <a href="#">BID1133</a>
+        </div>
+      </div>
+
+      <div class="box62">
+        <div class="box621">
+          <h4>BOX MAKERS INDIA</h4>
+        </div>
+
+        <div class="box622">
+          <p>
+            Products display &amp; Billing Address: No 679, 1st Floor, 8th Main,
+            14th Cross, JP Nagar 2nd Phase, Bangalore - 560078
+          </p>
+        </div>
+
+        <div class="box623">
+          <p>
+            JP Nagar <span>+918217209612</span> / Whitefield
+            <span>+918884446013</span>
+          </p>
+        </div>
+
+        <div class="box63">
+          <p>Copyright © 2021 Box Makers India - All Rights Reserved.</p>
+          <p>ProTech Group</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
