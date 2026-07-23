@@ -67,8 +67,10 @@ git clone https://github.com/divyam5858/Box-Makers-India.git
 - About Us
 - Contact Us
 
-## 👩‍💻 Author
 
-**Divyashree Mallarapu**
+## 👥 Contributors
 
-GitHub: https://github.com/divyam5858
+- @divyam5858
+- @abhimanyua569-svg
+- @anandakrishnan8803
+- @Roshan-sh-04
